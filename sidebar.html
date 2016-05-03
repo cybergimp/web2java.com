@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="logo.png">
+    <script>
+   var status = 0; 
+    function show(sidebar){
+    if (status==0){
+        sidebar.style.left="0px";
+        sidebar.style.transition="left .07s linear";
+        status = 1;
+    }
+    else{
+        sidebar.style.left="-200px";
+        sidebar.style.transition="left .07s linear";
+        status = 0; 
+    }
+    }
+    
+    </script>
+    <style>
+    body{
+        padding:0px;
+        margin:0px;
+        font-family: helvetica;
+     background: #464646;
+    font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+    }    
+    #sidebar{
+        width: 200px;
+        height: 100%;
+        position: absolute;
+        background: #151719;
+        top: 0px;
+        left:-200px;
+    }
+    #sidebar ul{
+        margin: 0px;
+        padding: 0px;
+        }
+    #sidebar ul li{
+        color: white;
+        padding:10px;
+        width:180px;
+        border-bottom: 2px solid black;
+        display: block;
+      
+    }
+    #button{
+        padding: 20px;
+        margin:20px;
+        position: absolute;
+        right: -75px;
+        top: -6px;
+    }
+    #button span{
+        width: 25px;
+        height: 5px;
+        background: black;
+        display: block;
+        margin-bottom:4px;
+        }
+        #container{
+        width: 400px;
+            height: 750px;
+        background: #BDBDBD; 
+        margin-left: auto;
+    margin-right: auto;
+       position: absolute;
+        left: 1px;  
+       
+        }
+        #content{
+            height: 700px;
+            width: 800px;
+        }
+    #header{
+ left: auto;
+    right: auto;
+    background: #F3F3F3 ;
+border-radius: 3px ;
+    width: 400px;
+    height: 80px;
+   position: absolute;
+        left: 1px;
+        box-shadow: 1px 1px #464646;
+    } 
+       
+    #footer{
+
+height: 30px;
+width: 400px;
+background: #F3F3F3 ;
+border-radius: 3px ;
+position: fixed;
+left: 1px;
+bottom: 200px; 
+text-align: right;
+       }
+        #foottext{
+        
+        position: absolute;
+            top: 8px;
+        font-size: 15px;
+        left: 250px;    
+        
+        }
+        #headtext{
+        text-align: center;
+        position: relative;
+            top: 15px;
+        font-size: 40px;
+        }
+        a:link {
+    color: white;
+ text-decoration: none;
+}
+
+a:visited {
+    color: white;
+ text-decoration: none;
+        }
+
+a:hover {
+    color: #D8D8D8;
+ text-decoration: none;
+        }
+
+a:active {
+    color: #D8D8D8;
+ text-decoration: none;
+        }
+    
+    </style>        
+</head>
+<body>
+<div id="container">
+    
+    <div id = "content">
+    <div id="header">
+        <div id= "headtext">Home</div>
+    </div>     
+<div id="footer">  
+        <div id="foottext">&#169; Steven Little WTCA</div>
+    </div>
+    </div>
+    
+
+    <div id="sidebar" onclick="show(sidebar)">
+<ul>                
+    <li><a href="sidebar.html">Home</a></li>   
+    <li><a href="sidebar2.html">About</a></li>
+    <li><a href="sidebar3.html">Contact</a></li>
+    <li><a href="sidebar4.html">Social Media</a></li>
+    
+    </ul>   
+    
+    <div id="button">
+    <span></span>
+        <span></span>
+            <span></span>
+
+    </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+    </div>    
+</body>
+</html>
+
+
+
